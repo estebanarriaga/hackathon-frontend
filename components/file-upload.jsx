@@ -68,7 +68,7 @@ const FileUpload = () => {
         <div className="border border-black rounded-lg w-fit h-fit flex flex-col gap-3">
           <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Upload an object</label>
           <input className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "  
-          id="file" type="file" placeholder="Select a file" onChange={(e) => {setFile(e.target.files?.[0])}} />
+          id="file" type="file" placeholder="Select a .glb file" onChange={(e) => {setFile(e.target.files?.[0])}} />
         </div>
       ) : (
         <ClipLoader />

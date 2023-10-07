@@ -33,7 +33,7 @@ export default function Home() {
         Start contributing right now
       </p>
       <hr />
-      <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-3xl my-10">Upload a new file</h1>
+      <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-3xl my-10">Upload a 3D Object</h1>
       <FileUpload />
       <Script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></Script>
       <div className='flex flex-row flex-wrap gap-4 mt-14'>

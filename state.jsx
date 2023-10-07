@@ -2,7 +2,7 @@ import { proxy } from "valtio";
 
 const state = proxy({
 	isLoggedIn: true,
-	file: 'covid_19.glb',
+	file: 'human.glb',
 });
 
 export default state;

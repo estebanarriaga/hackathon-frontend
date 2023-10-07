@@ -1,7 +1,7 @@
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, onClick }) => {
 	return (
-		<button className={`px-4 py-2 rounded-md ${className}`}>
+		<button onClick={onClick} className={`px-4 py-2 rounded-md bg-violet-600 ${className}`}>
 			{children}
 		</button>
 	);

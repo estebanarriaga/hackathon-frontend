@@ -1,5 +1,7 @@
+import Navbar from "../components/navbar"
 import './globals.css'
 import { Inter } from 'next/font/google'
+import ClientLayout from '../components/client-layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,9 +11,45 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+  // async function connectToNear() {
+  //   const { connect, WalletConnection } = nearAPI;
+
+  //   const connectionConfig = {
+  //     networkId: "testnet",
+  //     keyStore: myKeystone, // first create a key store 
+  //     nodeUrl: "https://rpc.testnet.near.org",
+  //     walletUrl: "https://wallet.testnet.near.org",
+  //     helperUrl: "https://helper.testnet.near.org",
+  //     explorerUrl: "https://explorer.testnet.near.org",
+  //   };
+
+  //   const nearConnection = await connect(connectionConfig);
+  //   const wallet = new WalletConnection(nearConnection, "Hackathon");
+
+  //   if (!wallet.isSignedIn()) {
+  //     wallet.requestSignIn({
+  //       contractId: "dev-1696631306411-68713125914531",
+  //     });
+  //   }
+
+  //   const walletAccount = wallet.account()
+
+  //   console.log(walletAccount);
+  // }
+
+  // connectToNear();
+
+  
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ClientLayout>
+        <body className={`${inter.className} mx-36 my-24`}>
+          <Navbar />
+          {children}
+        </body>
+      </ClientLayout>
     </html>
   )
 }

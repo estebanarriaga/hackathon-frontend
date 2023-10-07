@@ -2,7 +2,7 @@ import { proxy } from "valtio";
 
 const state = proxy({
 	isLoggedIn: true,
-	file: 'human.glb',
+	file: 'motherboard.glb',
 });
 
 export default state;

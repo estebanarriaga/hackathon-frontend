@@ -35,10 +35,10 @@ export default function Home() {
       <FileUpload />
       <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
       <div className='flex flex-row flex-wrap gap-4 mt-14'>
-        <ModelCard modelName={"/heart.glb"} />
-        <ModelCard modelName={"/human.glb"} />
-        <ModelCard modelName={"/arm.glb"} />
-        <ModelCard modelName={"/half-body.glb"} />
+        <ModelCard modelName={"/cpu.glb"} />
+        <ModelCard modelName={"/mining_rig.glb"} />
+        <ModelCard modelName={"/gpu.glb"} />
+        <ModelCard modelName={"/motherboard.glb"} />
       </div>
       <SessionComponent />
     </>

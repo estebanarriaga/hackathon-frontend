@@ -1,9 +1,10 @@
+import Script from 'next/script'
 
 const CanvasMain = ({ fileName }) => {
 	console.log("file name: ", fileName)
 	return (
 		<div>
-			<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+			<Script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></Script>
 			<div className="w-screen h-screen">
 			<model-viewer
 				style={{

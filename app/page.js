@@ -1,3 +1,5 @@
+
+import Script from 'next/script'
 import Image from 'next/image'
 import ModelCard from "../components/model-card"
 import FileUpload from '../components/file-upload'
@@ -33,7 +35,7 @@ export default function Home() {
       <hr />
       <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-3xl my-10">Upload a new file</h1>
       <FileUpload />
-      <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+      <Script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></Script>
       <div className='flex flex-row flex-wrap gap-4 mt-14'>
         <ModelCard modelName={"/cpu.glb"} />
         <ModelCard modelName={"/mining_rig.glb"} />

@@ -73,9 +73,14 @@ const FileUpload = () => {
       ) : (
         <ClipLoader />
       )}
+      <div className="flex flex-row gap-5">
 			<Button onClick={() => uploadFile()}>
 				Upload
 			</Button>
+			<Button className={"bg-slate-700 text-slate-300"} onClick={() => router.push('/canvas')}>
+        Continue from where you left off
+			</Button>
+      </div>
     </div>
 	);
 }

@@ -30,7 +30,7 @@ export default function Home() {
     <>
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-transparent bg-clip-text bg-gradient-to-tr from-violet-900 via-violet-950 to-blue-950">Wellcome to Parallel </h1>
       <p className="leading-7 [&:not(:first-child)]:mt-6">
-        Start contributing right now
+        Be part of this growing industry
       </p>
       <hr />
       <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-3xl my-10">Upload a 3D Object</h1>
@@ -42,7 +42,7 @@ export default function Home() {
         <ModelCard modelName={"/gpu.glb"} />
         <ModelCard modelName={"/motherboard.glb"} />
       </div>
-      <SessionComponent />
+      {/* <SessionComponent /> */}
     </>
   )
 }
